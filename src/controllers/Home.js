@@ -1,5 +1,5 @@
 const index = () => {
-    return 'Home';
+    return 'Home index test';
 }
 
 module.exports = { index };
