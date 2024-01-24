@@ -1,5 +1,5 @@
 const index = function (request, response) {
-    return response.json({ name: request.name, age: request.age });
+    return response.json("home teste");
 };
 
 module.exports = { index };
