@@ -7,7 +7,7 @@ const { init: initHandlebars } = require('./helpers/handlebars');
 const app = express();
 
 initHandlebars(app);
-
+app.use(express.json());
 app.use(express.static(path.join(__dirname, 'assets')));
 
 app.use('/', require('./routes/site'));
