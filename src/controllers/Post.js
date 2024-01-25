@@ -6,4 +6,8 @@ const store = function (request, response) {
     return response.json(request.body["name"]);
 };
 
-module.exports = { edit, store };
+const update = function (request, response) {
+    return response.json(request.params);
+};
+
+module.exports = { edit, store, update };
