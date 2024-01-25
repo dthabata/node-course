@@ -10,4 +10,8 @@ const update = function (request, response) {
     return response.json(request.params);
 };
 
-module.exports = { edit, store, update };
+const destroy = function (request, response) {
+    return response.json(request.params);
+};
+
+module.exports = { edit, store, update, destroy };
